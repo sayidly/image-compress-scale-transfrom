@@ -8,7 +8,7 @@ from scale import scale
 # get home path
 from pathlib import Path
 home = str(Path.home())
-path = home + "/Desktop/image"       # 图片路径
+path = home + "/Desktop/tinypng"       # 图片路径
 
 
 # options
@@ -24,7 +24,7 @@ def main():
             if arg=="-s":
                 scale(path)
             if arg=="-h":
-                print("-v to transform image from png to jpg; -s to scale image")
+                print("-h \t help;\n-c \t compress the image;\n-t \t transform image from png to jpg;\n-s \t scale image;")
             else:
                 pass
     else:

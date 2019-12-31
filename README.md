@@ -14,9 +14,9 @@ install dependency modules
 pip install -r requirements.txt
 ```
 
-create a folder names `image` in your Desktop
+create a folder names `tinypng` in your Desktop
 ```bash
-$ mkdir /Users/$USER/Desktop/image
+$ mkdir /Users/$USER/Desktop/tinypng
 ```
 
 ## Usage
