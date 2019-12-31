@@ -9,8 +9,14 @@
 
 ## Setup
 
+install dependency modules
 ```
 pip install -r requirements.txt
+```
+
+create a folder names `image` in your Desktop
+```bash
+$ mkdir /Users/$USER/Desktop/image
 ```
 
 ## Usage

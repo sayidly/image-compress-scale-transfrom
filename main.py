@@ -8,7 +8,7 @@ from scale import scale
 # get home path
 from pathlib import Path
 home = str(Path.home())
-path = home + "/Desktop/tinypng"       # 图片路径
+path = home + "/Desktop/image"       # 图片路径
 
 
 # options
