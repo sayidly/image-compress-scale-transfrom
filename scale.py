@@ -55,4 +55,4 @@ def scale(path):
                 print("No.. input is not a wrong format. ")
         except ValueError:
             print("No.. input is not a wrong format. ")
-    print("\n完成缩放")
+    print("\n完成缩放\n")

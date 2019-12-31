@@ -17,5 +17,5 @@ def pngTojpg(path):
                     os.rename(thisFile, base + ".jpg")
             except:
                 pass
-    print("\n所有图片修改为JPG")
+    print("\n所有图片修改为JPG\n")
 

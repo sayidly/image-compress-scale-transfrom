@@ -16,5 +16,5 @@ def compress(path):
                 tinify.from_file(imgpath).to_file(imgpath)
             except:
                 pass
-    print("\n所有图片转化成功")
+    print("\n所有图片压缩成功\n")
 
