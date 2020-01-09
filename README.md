@@ -9,9 +9,19 @@
 
 ## Setup
 
+install `python3`
+```
+brew install python3
+```
+
+install `pip3`
+```
+brew postinstall python3
+```
+
 install dependency modules
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 create a folder names `tinypng` in your Desktop
@@ -24,7 +34,7 @@ $ mkdir /Users/$USER/Desktop/tinypng
 use `-s` `-c` `-t` argument as you wish
 
 ```
-python main.py -s -c -t
+python3 main.py -s -c -t
 ```
 
 ## 附录(pipenv)：python – 在Virtualenvs中的破坏引用
