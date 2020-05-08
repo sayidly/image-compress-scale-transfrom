@@ -3,7 +3,7 @@
 import tinify
 import os
 
-tinify.key = 'CfZhVWCHvclrzsrg8f8Tv3LWrPS3hkbq'
+tinify.key = 'RJD9LZXKQcKcCCbVYqGpTCQ7RZzvGjYR'
 #path = input("请输入包含图片的文件夹：")
 #path = "/Users/sayidhe/Desktop/tinypng"       # 图片路径
 
