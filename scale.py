@@ -5,6 +5,9 @@ import os, sys
 
 def to_pixel(val, path):
     for dirpath, dirs, files in os.walk(path):
+        #ignore finished files
+        if "finished" in dirs:
+            dirs.remove("finished")
         for file in files:
             try:
                 imgpath = os.path.join(dirpath, file)
@@ -21,6 +24,9 @@ def to_pixel(val, path):
 
 def to_percent(val, path):
     for dirpath, dirs, files in os.walk(path):
+        #ignore finished files
+        if "finished" in dirs:
+            dirs.remove("finished")
         for file in files:
             try:
                 imgpath = os.path.join(dirpath, file)

@@ -3,6 +3,9 @@ import os, sys
 
 def pngTojpg(path):
     for dirpath, dirs, files in os.walk(path):
+        #ignore finished files
+        if "finished" in dirs:
+            dirs.remove("finished")
         for file in files:
             try:
                 imgpath = os.path.join(dirpath, file)
