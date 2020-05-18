@@ -1,7 +1,7 @@
 from PIL import Image
 import os, sys
 
-def pngTojpg(path):
+def tojpg(path):
     for dirpath, dirs, files in os.walk(path):
         #ignore finished files
         if "finished" in dirs:
@@ -11,9 +11,9 @@ def pngTojpg(path):
                 imgpath = os.path.join(dirpath, file)
                 im = Image.open(imgpath)
                 if not im.mode == 'RGB':
-                    print("png to jpg …" + imgpath)
+                    print("Convert to jpg …" + imgpath)
                     rgb_im = im.convert('RGB')
-                    rgb_im.save(imgpath)
+                    rgb_im.save(imgpath, "jpeg")
                     # Rename the file from PNG to JPG
                     thisFile = imgpath
                     base = os.path.splitext(thisFile)[0]
@@ -21,4 +21,3 @@ def pngTojpg(path):
             except:
                 pass
     print("\n所有图片修改为JPG\n")
-

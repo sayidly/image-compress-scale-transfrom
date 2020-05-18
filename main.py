@@ -2,7 +2,8 @@
 #!/usr/bin/env python
 
 from compress import compress
-from pngTojpg import pngTojpg
+from tojpg import tojpg
+from topng import topng
 from scale import scale
 
 # get home path
@@ -19,8 +20,10 @@ def main():
         for arg in sys.argv[1:]:
             if arg=="-c":
                 compress(path)
-            if arg=="-t":
-                pngTojpg(path)
+            if arg=="-tjpg":
+                tojpg(path)
+            if arg=="-tpng":
+                topng(path)
             if arg=="-s":
                 scale(path)
             if arg=="-h":
