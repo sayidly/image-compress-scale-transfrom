@@ -31,4 +31,4 @@ print("\n制作 gif 成功\n")
 #print(list(images))
 
 images[0].save(('%s/imagedraw.gif' % path),
-               save_all=True, append_images=images[1:], optimize=False, duration=40, loop=0)
+               save_all=True, append_images=images[1:], optimize=False, duration=0, loop=0)
