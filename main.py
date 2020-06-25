@@ -10,6 +10,7 @@ from scale import scale
 from pathlib import Path
 home = str(Path.home())
 path = home + "/Desktop/tinypng"       # 图片路径
+# cwd = os.getcwd()
 
 
 # options
