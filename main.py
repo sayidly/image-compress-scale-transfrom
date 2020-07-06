@@ -5,6 +5,7 @@ from compress import compress
 from tojpg import tojpg
 from topng import topng
 from scale import scale
+from heictojpg import heictojpg
 
 # get home path
 from pathlib import Path
@@ -25,6 +26,8 @@ def main():
                 tojpg(path)
             if arg=="-tpng":
                 topng(path)
+            if arg=="-heic":
+                heictojpg(path)
             if arg=="-s":
                 scale(path)
             if arg=="-h":

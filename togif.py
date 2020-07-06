@@ -14,7 +14,7 @@ for dirpath, dirs, files in os.walk(path):
     files.sort()
     for file in files:
         try:
-            if file.endswith('.png'):
+            if file.endswith('.png') or file.endswith(".PNG"):
                 imgpath = os.path.join(dirpath, file)
                 print(imgpath)
                 images.append(imageio.imread(imgpath))
